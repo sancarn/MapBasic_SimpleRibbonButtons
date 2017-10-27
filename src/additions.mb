@@ -1,0 +1,373 @@
+'#######################################################################################################################
+'#                                                                                                                     #
+'#                                                    PERSONAL.MB                                                      #
+'#                                                                                                                     #
+'#######################################################################################################################
+
+'Button Sizes:
+'CONTROL_SIZE_EXTRASMALL				1
+'CONTROL_SIZE_SMALL						2
+'CONTROL_SIZE_LARGE						3
+
+'Control Types (Enums)
+'ControlType_Button 					1
+'ControlType_ToolButton 				2
+'ControlType_RibbonMenuItem 			3
+'ControlType_RibbonButtonPanel 			4
+'ControlType_RibbonSeparator 			5
+'ControlType_ContextMenuItem 			6
+'ControlType_ContextMenuSeparator 		7
+'ControlType_MenuItemSeparator 			8
+'ControlType_DropDownButton 			9
+'ControlType_SplitButton 				10
+'ControlType_DropDownMenuGroup 			11
+'ControlType_GalleryControl 			12
+'ControlType_GalleryItem 				13
+'ControlType_GalleryGroup 				14
+'ControlType_CustomControl 				15
+'ControlType_TextBlock 					16
+'ControlType_Image 						17
+'ControlType_BackStageTabItem 			18
+'ControlType_BackStageButton 			19
+'ControlType_BackStageTabSection 		20
+'ControlType_BackStageSeparator 		21
+'ControlType_StackPanel 				22
+'ControlType_Unknown 					23
+
+'May Be Useful
+'Function RBNTabExists(ByVal sTabName As String) As Logical
+'Function RBNTabGroupExists(ByVal sTabName As String, ByVal sGroupName As String) As Logical
+'Function RBNSplitButtonGroupExists()
+
+'Future functions:
+	
+Sub RIBBON_AddTab(ByVal sTabName as string, ByVal sKeyTip as string)
+	'Creates a Ribbon Tab.
+	'sTabName is the name of the tab.
+	'keytip is the key to press after pressing ALT to select this tab.
+	
+	OnError GoTo ErrorOccurred
+	
+	If sTabName = "" then
+		Exit Sub
+	End If
+	
+	'the ribbon ID name will be set to the tabName without spaces or special characters
+	Dim sTabID as String
+	Dim nCtrlIdx as Integer
+	sTabID = replace(sTabName," ","_")		'tabID cannot have spaces inside them
+	If NOT RBNTabExists(sTabID) then
+		nCtrlIdx = RBNAddTab(sTabID, sTabName, sKeyTip)
+		If NOT nCtrlIdx > 0 then
+			Exit Sub
+		End If
+	End If
+	Exit Sub
+	'-----------------------
+ErrorOccurred:
+	Call ERRCreate(Err(), Error$(), "FULL_RIBBON_AddTab")
+	Call ERRShow()
+	End Program
+End Sub
+
+Sub RIBBON_AddGroup(ByVal sTabName as string, ByVal sGroupName as string)
+	'Adds a group to the specified ribbon tab.
+	
+	OnError GoTo ErrorOccurred
+	
+	If sTabName = "" OR sGroupName = "" then
+		Exit Sub
+	End If
+	
+	Dim nCtrlIdx as Integer
+	
+	'[Get tab, group IDs]
+	Dim sTabID, sGroupID as String
+	sTabID = replace(sTabName, " ", "_")		'tabID cannot have spaces inside them
+	sGroupID = replace(sGroupName, " ", "_")	'groupID cannot have spaces inside them
+	
+	'Add Group
+	If NOT RBNTabGroupExists(sTabID,sGroupID) then
+		nCtrlIdx = RBNTabAddGroup(sGroupID,sGroupName,sTabID)
+		If NOT nCtrlIdx > 0 then
+			Exit Sub
+		End If
+	End If
+	Exit Sub
+	'-----------------------
+ErrorOccurred:
+	Call ERRCreate(Err(), Error$(), "FULL_RIBBON_AddGroup")
+	Call ERRShow()
+	End Program
+End Sub
+
+Sub RIBBON_AddButton(ByVal sTabName as string, ByVal sGroupName as string, ByVal sButtonName as string,	 ByVal sKeyTip as string, ByVal sIconPath as string, ByVal sDescription as string, ByVal sSubName as String)
+	'Function adds a big button to the ribbon, in the group and tab specified.
+	OnError GoTo ErrorOccurred
+	
+	If sTabName = "" OR sGroupName = "" OR sButtonName = "" then
+		Exit Sub
+	End If
+	
+	Dim sTabID, sGroupID, sButtonID as string
+	Dim nCtrlIdx as Integer
+	
+	'[Get tab, group and button IDs]
+	sTabID = replace(sTabName," ", "_")
+	sGroupID = replace(sGroupName," ","_")
+	sButtonID = replace(sButtonName, " ","_")
+	
+	'Print "sTabID: " & sTabID
+	'Print "sGroupID: " & sGroupID
+	'Print "sButtonID: " & sButtonID
+	
+	'Add button
+	nCtrlIdx = RBNGroupAddButton(sButtonID, sButtonName, sKeyTip, sTabID, sGroupID)
+	If nCtrlIdx > 0 then
+		'Create & Set the button tooltip
+		If sDescription <> "" then
+			Call RBNControlSetToolTipIdx(nCtrlIdx,sButtonName, sDescription, "")
+		End If
+		
+		'Set the button icon
+		If sIconPath <> "" then
+			Call RBNControlSetIconsIdx(nCtrlIdx, CONTROL_SIZE_LARGE, "", sIconPath)
+		End If
+		
+		'Attach MapBasic Handle to button
+		Call RBNControlSetCustomMBXHandlerIdx( nCtrlIdx, sSubName)
+	End If
+	Exit Sub
+	'-----------------------
+ErrorOccurred:
+	Call ERRCreate(Err(), Error$(), "FULL_RIBBON_AddButton")
+	Call ERRShow()
+	End Program
+End Sub
+
+Sub RIBBON_AddSimpleButton(ByVal sTabName as string, ByVal sGroupName as string, ByVal sButtonName as string,	 ByVal sKeyTip as string, ByVal sIconPath as string, ByVal sDescription as string, ByVal sSubName as String)
+	'Function adds a big button to the ribbon. If tab/group is missing, tab/group is created.
+	OnError GoTo ErrorOccurred
+	
+	If sTabName = "" OR sGroupName = "" OR sButtonName = "" then
+		Call ERRCreate(Err(),Error$(), "FULL_RIBBON_AddSimpleButton - sTabName, sGroupName and sButtonName cannot be blank")
+		Call ERRShow()
+		End Program
+	End If
+	
+	Dim sTabID, sGroupID, sButtonID as string
+	Dim nCtrlIdx as Integer
+	
+	'[Get tab, group and button IDs]
+	sTabID = replace(sTabName," ", "_")
+	sGroupID = replace(sGroupName," ","_")
+	sButtonID = replace(sButtonName, " ","_")
+	
+	'Print "sTabID: " & sTabID
+	'Print "sGroupID: " & sGroupID
+	'Print "sButtonID: " & sButtonID
+	
+	If Not RBNTabExists(sTabName) then
+		Call RIBBON_AddTab(sTabName, Left$(sTabName,1))
+	End If
+
+	If Not RBNTabGroupExists(sTabName, sGroupName) then
+		Call RIBBON_AddGroup(sTabName, sGroupName)
+	End If
+	
+	'Add button
+	nCtrlIdx = RBNGroupAddButton(sButtonID, sButtonName, sKeyTip, sTabID, sGroupID)
+	If nCtrlIdx > 0 then
+		'Create & Set the button tooltip
+		If sDescription <> "" then
+			Call RBNControlSetToolTipIdx(nCtrlIdx,sButtonName, sDescription, "")
+		End If
+		
+		'Set the button icon
+		If sIconPath <> "" then
+			Call RBNControlSetIconsIdx(nCtrlIdx, CONTROL_SIZE_LARGE, "", sIconPath)
+		End If
+		
+		'Attach MapBasic Handle to button
+		Call RBNControlSetCustomMBXHandlerIdx( nCtrlIdx, sSubName)
+	End If
+	Exit Sub
+	'-----------------------
+ErrorOccurred:
+	Call ERRCreate(Err(), Error$(), "FULL_RIBBON_AddButton")
+	Call ERRShow()
+	End Program
+End Sub
+
+
+Sub RIBBON_AddSplitButton(ByVal sTabName as string, ByVal sGroupName as string, ByVal sSplitButtonName as string, ByVal sKeyTip as string, ByVal sIconPath as string, ByVal sDescription as string, ByVal sSubName as String)
+	OnError GoTo ErrorOccurred
+	Dim sTabID, sGroupID, sSplitButtonID as string
+	Dim nCtrlIdx as Integer
+	
+	'get controlIDs
+	sTabID = replace(sTabName," ", "_")
+	sGroupID = replace(sGroupName," ","_")
+	sSplitButtonID = replace(sSplitButtonName ," ","_")
+	
+	'Add split button with default value
+	nCtrlIdx = RBNGroupAddControl( sSplitButtonID,sSplitButtonName,sKeytip,ControlType_SplitButton,sTabID,sGroupID)
+	If nCtrlIdx > 0 then
+		Call RBNControlSetToolTipIdx( nCtrlIdx ,sButtonName, sDescription,"")														'Value of first tooltip
+		Call RBNControlSetIconsIdx(nCtrlIdx ,CONTROL_SIZE_LARGE,"",sIconPath)														'Value of first icon
+		Call RBNControlSetCustomMBXHandlerIdx( nCtrlIdx, sSubName)																		'Value of first sub
+	End If
+	Exit Sub
+	'----------------------
+ErrorOccurred:
+	Call ERRCreate(Err(), Error$(), "FULL_RIBBON_AddSplitButton")
+	Call ERRShow()
+	End Program
+End Sub
+
+Sub RIBBON_AddSplitGroup(ByVal sTabName as string, ByVal sGroupName as string, ByVal sSplitButtonName as String, ByVal sSplitGroupName as string, ByVal sKeyTip as string, ByVal sIconPath as string, ByVal sDescription as string, ByVal sSubName as String)
+	OnError GoTo ErrorOccurred
+	Dim sTabID, sGroupID, sSplitButtonID, sSplitGroupID as string
+	Dim nCtrlIdx as Integer
+	
+	'get controlIDs
+	sTabID = replace(sTabName," ", "_")
+	sGroupID = replace(sGroupName," ","_")
+	sSplitButtonID = replace(sSplitButtonName ," ","_")
+	sSplitGroupID = replace(sSplitGroupName ," ","_")
+	
+	nCtrlIdx = RBNSplitButtonAddGroup( sSplitButtonGroupID, sSplitButtonGroupName, sTabID, sGroupID, sSplitButtonID)
+	Exit Sub
+	'----------------------
+ErrorOccurred:
+	Call ERRCreate(Err(), Error$(), "FULL_RIBBON_AddSplitGroup")
+	Call ERRShow()
+	End Program
+
+End Sub
+
+Sub RIBBON_AddSplitControl(ByVal sTabName as string, ByVal sGroupName as string, ByVal sSplitButtonName as String, ByVal sSplitGroupName as string, ByVal sButtonName as string, ByVal sKeyTip as string, ByVal sIconPath as string, ByVal sDescription as string, ByVal sSubName as String)
+	OnError GoTo ErrorOccurred
+	Dim sTabID, sGroupID, sSplitButtonID, sSplitGroupID, sButtonID as string
+	Dim nCtrlIdx as Integer
+	
+	'get controlIDs
+	sTabID = replace(sTabName," ", "_")
+	sGroupID = replace(sGroupName," ","_")
+	sSplitButtonID = replace(sSplitButtonName ," ","_")
+	sSplitGroupID = replace(sSplitGroupName ," ","_")
+	sButtonID = replace(sButtonName ," ","_")
+	
+	If Not RBNTabExists(sTabID) then
+		GoTo ErrorOccurred0
+	End If
+	
+	If Not RBNTabGroupExists(sTabName,sGroupName) then
+		GoTo ErrorOccurred1
+	End If
+	
+	'add button control to split button
+	nCtrlIdx = RBNSplitButtonGroupAddControl( sButtonID, sButtonName, sKeytip, ControlType_Button, sTabID, sGroupID, sSplitButtonID, sSplitGroupID)
+	If nCtrlIdx > 0 then
+		Call RBNControlSetToolTipIdx( nCtrlIdx ,sButtonName,sDescription,"")
+		Call RBNControlSetIconsIdx(nCtrlIdx ,CONTROL_SIZE_LARGE,"", sLargeIcon)
+		Call RBNControlSetCustomMBXHandlerIdx( nCtrlIdx , sSubName)
+	End If
+	Exit Sub
+	'----------------------
+ErrorOccurred0:
+	Call ERRCreate(Err(), Error$(), "FULL_RIBBON_AddSplitControl - Tab doesn't exist")
+	Call ERRShow()
+	End Program
+ErrorOccurred1:
+	Call ERRCreate(Err(), Error$(), "FULL_RIBBON_AddSplitControl - Group doesn't exist")
+	Call ERRShow()
+	End Program
+ErrorOccurred:
+	Call ERRCreate(Err(), Error$(), "FULL_RIBBON_AddSplitControl")
+	Call ERRShow()
+	End Program	
+End Sub
+
+Function Replace(ByVal _full_string As String, ByVal _remove_string As
+String, ByVal _replacement_string As String) As String
+        Dim _remove_string_pos As Integer
+        Dim _start_string As String
+        Dim _end_string As String
+        
+        OnError Goto ErrorOccured
+        
+Search_For_Replace:
+        _remove_string_pos = InStr(1, LCase$(_full_string),
+LCase$(_remove_string))
+        
+        If (_remove_string_pos > 0) Then
+                If (_remove_string_pos = 1) Then
+                        _full_string = _replacement_string +
+Mid$(_full_string, Len(_remove_string)+1, Len(_full_string) -
+Len(_remove_string))
+                ElseIf ((_remove_string_pos + Len(_remove_string) - 1) =
+Len(_full_string)) Then
+                        _full_string = Left$(_full_string,
+_remove_string_pos-1) + _replacement_string
+                Else
+                        _start_string = Left$(_full_string,
+_remove_string_pos-1)
+                        _end_string = Mid$(_full_string,
+_remove_string_pos + Len(_remove_string), Len(_full_string) -
+(_remove_string_pos + Len(_remove_string) - 1))
+                        _full_string = _start_string +
+_replacement_string + _end_string
+                End If
+                
+                Goto Search_For_Replace
+        End If
+        
+        Replace = _full_string
+
+        Exit Function
+ErrorOccured:
+        Replace = ""
+End Function
+
+Sub RIBBON_sSplit(ByVal someString as string, resultArray() as String, ByVal delimeter as string)
+	'This subroutine takes an array someArray() and populates it with the elements given in the string procided, seperated by the delimeter provided.
+	'The returned array is an array of strings and has elements 1 to UBound(resultArray).
+	
+	Dim i,k,j as integer
+	k=1	'k is the current element in the array
+	i=1 'i is the starting point of extraction in the string
+	j=1 'j is the ending point of extraction in the string
+	
+	'while the delimeter is found inside the string
+	While instr(i,someString,delimeter) > 0
+		'Resize the array to k elements
+		Redim resultArray(k)
+		'set j to the position of the next comma
+		j = InStr( i, someString, delimeter )
+		'set the kth element of the array to the text between i and j-i (between the 2 commas)
+		resultArray(k) = mid$(someString,i,j-i)
+		'increment k
+		k=k+1
+		'the current starting position = the next position
+		i=j+1
+	Wend
+	
+	'Add the last element to the array
+	Redim resultArray(k)
+	resultArray(k) = mid$(someString,i,len(someString))
+End Sub
+
+Function RIBBON_sJoin(someArray() as string, byval delimeter as string) as string
+	Dim sResult as string
+	Dim i as integer
+	
+	'loop through whole array
+	For i = 1 to UBound(someArray)
+		'concatenate array element to resulting string
+		sResult = sResult & delimeter & someArray(i)
+	Next
+	
+	'return the result, without the initial delimeter
+	RIBBON_sJoin = Mid$(sResult, Len(delimeter) +1, Len(sResult))
+End Function
