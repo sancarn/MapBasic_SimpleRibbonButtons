@@ -1,0 +1,49 @@
+'#######################################################################################################################
+'#                                                                                                                     #
+'#                                                    PERSONAL.DEF                                                     #
+'#                                                                                                                     #
+'#######################################################################################################################
+
+'Goal to simplify addition of Buttons to the ribbon, but not including functionality that exists within the ribbon, but
+'  may not be completely desired.
+'
+'E.G.
+'Include "FULL_Ribbon.def"
+'Call RIBBON_AddTab("My Tab", "M")
+'Call RIBBON_AddGroup("My Tab", "My group")
+'Call RIBBON_AddButton("My tab", "My group","My Button", "M", "C:\mybutton.png" ,"This is a button","subButton1")
+
+'Add tab
+Declare Sub RIBBON_AddTab(ByVal sTabName as string, ByVal sKeyTip as string)
+
+'Add group
+Declare Sub RIBBON_AddGroup(ByVal sTabName as string, ByVal sGroupName as string)
+
+'Add big button
+Declare Sub RIBBON_AddButton(ByVal sTabName as string, ByVal sGroupName as string, ByVal sButtonName as string,
+	ByVal sKeyTip as string, ByVal sIconPath as string, ByVal sDescription as string, ByVal sSubName as String)
+
+'Add a split button
+Declare Sub RIBBON_AddSplitButton(ByVal sTabName as string, ByVal sGroupName as string, ByVal sSplitButtonName as string,
+	ByVal sKeyTip as string, ByVal sIconPath as string, ByVal sDescription as string, ByVal sSubName as String)
+
+'Add a group to a split button
+Declare Sub RIBBON_AddSplitGroup(ByVal sTabName as string, ByVal sGroupName as string, ByVal sSplitButtonName as String,
+	ByVal sSplitGroupName as string, ByVal sKeyTip as string, ByVal sIconPath as string, ByVal sDescription as string, ByVal sSubName as String)
+
+'Add a button to a group of a split button 	
+Declare Sub RIBBON_AddSplitControl(ByVal sTabName as string, ByVal sGroupName as string, ByVal sSplitButtonName as String,
+	ByVal sSplitGroupName as string, ByVal sButtonName as string, ByVal sKeyTip as string, ByVal sIconPath as string,
+	ByVal sDescription as string, ByVal sSubName as String)
+
+'General replace function created by Hayden Fisher: https://groups.google.com/forum/#!topic/mapinfo-l/tqxyJzLjZ7A
+Declare Function Replace(ByVal _full_string As String, ByVal _remove_string As String, ByVal _replacement_string As String) As String
+
+'sSplit() - similar to VBA split function, however Arrays can only be passed ByRef in MapBasic (cannot be returned from Function)
+Declare Sub RIBBON_sSplit(ByVal someString as string, resultArray() as String, ByVal delimeter as string)
+
+'sJoin() - similar to VBA join function
+Declare Function RIBBON_sJoin(someArray() as string, byval delimeter as string) as string
+
+'Simple button additions (creates tabs, groups and buttons for the user)
+Declare Sub RIBBON_AddSimpleButton(ByVal sTabName as string, ByVal sGroupName as string, ByVal sButtonName as string,	 ByVal sKeyTip as string, ByVal sIconPath as string, ByVal sDescription as string, ByVal sSubName as String)
