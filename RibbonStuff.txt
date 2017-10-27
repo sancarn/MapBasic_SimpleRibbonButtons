@@ -1,0 +1,77 @@
+###############
+# SYNTAX:     #
+#################################################################################################################################################
+'Create Split Button
+Function RBNGroupAddControl( sControlName,sCaption,sKeytip,ControlType_SplitButton ,sTabName,sGroupName)
+
+'Create Split Button Group
+Function RBNSplitButtonAddGroup( sSplitButtonGroupName,sCaption,sTabName,sGroupName,sSplitButtonName)
+
+'Create Button inside Split Button Group
+Function RBNSplitButtonGroupAddControl( sControlName,sCaption,sKeytip, ControlType_Button,sTabName,sGroupName,sSplitButtonName,sSplitButtonGroupName)
+
+'Button properties
+Sub RBNControlSetToolTipIdx( nElementIdx,sDescription,sText,sDisabledText)
+Sub RBNControlSetIconsIdx(nElementIdx,nSize,sSmallIcon,sLargeIcon)
+Sub RBNControlSetCustomMBXHandlerIdx( nElementIdx,sMBXHandler)
+
+#################################################################################################################################################
+
+
+###############
+# MY SYNTAX:  #
+#################################################################################################################################################
+'Create Split Button
+Function RBNGroupAddControl( sSplitButtonID,sSplitButtonName,sKeytip, ControlType_SplitButton ,sTabID,sGroupID)
+
+'Create Split Button Group
+Function RBNSplitButtonAddGroup( sSplitButtonGroupID, sSplitButtonGroupName, sTabID, sGroupID, sSplitButtonID)
+
+'Create Button inside Split Button Group
+Function RBNSplitButtonGroupAddControl( sButtonID, sButtonName, sKeytip, ControlType_Button, sTabID, sGroupID, sSplitButtonID, sSplitButtonGroupID)
+
+'Button properties
+Sub RBNControlSetToolTipIdx( nCtrlIdx ,sDescription,sText,"")
+Sub RBNControlSetIconsIdx(nCtrlIdx ,CONTROL_SIZE_LARGE,"",sLargeIcon)
+Sub RBNControlSetCustomMBXHandlerIdx( nCtrlIdx ,sMBXHandler)
+#################################################################################################################################################
+
+
+
+'Add SplitButton
+nCtrlIdx = RBNGroupAddControl( ControlType_SplitButton )
+If nCtrlIdx > 0
+	Call RBNControlSetIconsIdx( Icon1 )
+	Call RBNControlSetCustomMBXHandlerIdx( "menuSub" )
+	'Get the ID of the SplitButton - needed in the handler
+	someVar = RBNControlGetControlIDIdx(nCtrlIdx)
+End If
+
+'Add SplitButtonGroup
+nCtrlIdx = RBNSplitButtonAddGroup(...)
+
+'Add NestedButtons to SplitButtonGroup
+nCtrlIdx = RBNSplitButtonGroupAddControl( ControlType_Button )
+If nCtrlIdx > 0
+	Call RBNControlSetToolTipIdx(...)
+	Call RBNControlSetIconsIdx(...)
+	Call RBNControlSetCustomMBXHandlerIdx( "menuSub" )
+	If mnFirstBaseMapControlIDSpbtn = 0 then
+		anotherVar = RBNControlGetControlIDIdx( nCtrlIdx )
+	End If
+End If
+
+
+
+
+Sub menuSub
+nItem	= CommandInfo(CMD_INFO_TOOLBTN)
+If nItem = someVar then
+	nItem = 1
+Else
+	nItem = nItem - anotherVar + 1
+End If
+
+Select case nItem
+	'...
+
