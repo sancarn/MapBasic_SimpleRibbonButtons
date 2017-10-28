@@ -1,5 +1,5 @@
 
-'This module includes many functions from many other modules created by Peter Møller and Co.
+'This module includes many functions from many other modules created by Peter MÃ¸ller and Co.
 'Include "PERSONAL.def"
 'Include "Defaults.def"
 'Include "Types\T_ERROR.def"
@@ -23,7 +23,7 @@ Include "FULL_RIBBON.def"
 '#                                                                                                                     #
 '#######################################################################################################################
 '*******************************************************************************
-'** 	Created By Peter Horsbøll Møller, Pitney Bowes Software
+'** 	Created By Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 '** 	Program:
 '** 	Modul:
 '**
@@ -96,7 +96,7 @@ Dim 	mnNumEvents As Integer,
 Dim	msTabName, msGroupName, msControlName As String,
 	mnCurCtrlIdx As Integer
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -447,7 +447,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -751,7 +751,7 @@ Dim	nNumTabs, nNumGroups, nNumCntrls, nNumGalleryGroups, nNumGalleryCtrls, nNumS
 						Next
 
 					Case Else
-						Print #369, "   Print " & eye & "ControlType " & nCntrlType & " understøttes ikke: " & sName & " " & sCaption & eye
+						Print #369, "   Print " & eye & "ControlType " & nCntrlType & " understÃ¸ttes ikke: " & sName & " " & sCaption & eye
 				End Case
 
 '				Print #369, "	End If	'RBNGroupAddControl"
@@ -846,7 +846,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -1717,7 +1717,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -1745,7 +1745,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -1774,7 +1774,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -1810,7 +1810,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -1886,7 +1886,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -1954,7 +1954,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2017,7 +2017,7 @@ End Sub
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2058,7 +2058,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2097,7 +2097,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2118,7 +2118,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2153,7 +2153,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2175,7 +2175,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2194,7 +2194,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2213,7 +2213,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2232,7 +2232,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2251,7 +2251,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2285,7 +2285,7 @@ End Sub
 
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2322,7 +2322,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2371,7 +2371,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2392,7 +2392,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2425,7 +2425,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2446,7 +2446,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2501,7 +2501,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2539,7 +2539,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2595,7 +2595,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2650,7 +2650,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2695,7 +2695,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2733,7 +2733,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2770,7 +2770,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2826,7 +2826,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2848,7 +2848,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -2874,7 +2874,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2919,7 +2919,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2940,7 +2940,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -2983,7 +2983,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3004,7 +3004,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3023,7 +3023,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3043,7 +3043,7 @@ End Sub
 
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3062,7 +3062,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3081,7 +3081,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3127,7 +3127,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3195,7 +3195,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3260,7 +3260,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3328,7 +3328,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3366,7 +3366,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3403,7 +3403,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3428,7 +3428,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3458,7 +3458,7 @@ End Function
 
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3486,7 +3486,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3512,7 +3512,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3543,7 +3543,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3570,7 +3570,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3601,7 +3601,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3628,7 +3628,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3659,7 +3659,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3686,7 +3686,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3713,7 +3713,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -3740,7 +3740,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3771,7 +3771,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3804,7 +3804,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3861,7 +3861,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3903,7 +3903,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -3964,7 +3964,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -4026,7 +4026,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4110,7 +4110,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4188,7 +4188,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4231,7 +4231,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4287,7 +4287,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4313,7 +4313,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4396,7 +4396,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4482,7 +4482,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -4543,7 +4543,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4626,7 +4626,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4704,7 +4704,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4747,7 +4747,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4803,7 +4803,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4829,7 +4829,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4912,7 +4912,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -4999,7 +4999,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5043,7 +5043,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5098,7 +5098,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5124,7 +5124,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5180,7 +5180,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5241,7 +5241,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5304,7 +5304,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5341,7 +5341,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5382,7 +5382,7 @@ End Function
 '** WORKING WITH MENUITEMS ON CONTEXTMENUS *************************************************************
 '*******************************************************************************************************
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5407,7 +5407,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5462,7 +5462,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5501,7 +5501,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5537,7 +5537,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5566,7 +5566,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5596,7 +5596,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5626,7 +5626,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5656,7 +5656,7 @@ End Function
 
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5703,7 +5703,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5738,7 +5738,7 @@ End Function
 '** WORKING WITH STACKPANELS ON MINI MAP TOOLBAR **********************************************
 '*******************************************************************************************************
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5779,7 +5779,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5803,7 +5803,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5829,7 +5829,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5855,7 +5855,7 @@ End Function
 
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5878,7 +5878,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5911,7 +5911,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5958,7 +5958,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -5985,7 +5985,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -6025,7 +6025,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -6066,7 +6066,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -6102,7 +6102,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -6137,7 +6137,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -6172,7 +6172,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -6195,7 +6195,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -6224,7 +6224,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -6276,7 +6276,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -6326,7 +6326,7 @@ End Function
 '*******************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -6433,7 +6433,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -6454,7 +6454,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -6515,7 +6515,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -6535,7 +6535,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -6612,7 +6612,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -6633,7 +6633,7 @@ End Sub
 
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -6739,7 +6739,7 @@ End Function
 
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -6856,7 +6856,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -6877,7 +6877,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -6918,7 +6918,7 @@ End Sub
 '		Case ControlType_StackPanel
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -6999,7 +6999,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7019,7 +7019,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7080,7 +7080,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7098,7 +7098,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7159,7 +7159,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7179,7 +7179,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7209,7 +7209,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7228,7 +7228,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7265,7 +7265,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7286,7 +7286,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7352,7 +7352,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7371,7 +7371,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7449,7 +7449,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7469,7 +7469,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7508,7 +7508,7 @@ End Sub
 
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7561,7 +7561,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7581,7 +7581,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7632,7 +7632,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7652,7 +7652,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7700,7 +7700,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -7720,7 +7720,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Business Insight
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Business Insight
 'Parameters:
 '	:
 'Return value:
@@ -7797,7 +7797,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Business Insight
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Business Insight
 'Parameters:
 '	:
 'Return value:
@@ -7817,7 +7817,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -7869,7 +7869,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -7917,7 +7917,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -7973,7 +7973,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -8002,7 +8002,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -8047,7 +8047,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8151,7 +8151,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8193,7 +8193,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -8232,7 +8232,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -8276,7 +8276,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -8317,7 +8317,7 @@ End Function
 '**********************************************************************************************''
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8376,7 +8376,7 @@ End Sub
 Dim	mnNumErrors As Integer,
 	marrErrors() As T_ERROR
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8408,7 +8408,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Business Insight
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Business Insight
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8426,7 +8426,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Business Insight
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Business Insight
 'Parameters:
 '	:
 'Return value:
@@ -8459,7 +8459,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Business Insight
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Business Insight
 'Parameters:
 '	:
 'Return value:
@@ -8492,7 +8492,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Business Insight
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Business Insight
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8510,7 +8510,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Business Insight
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Business Insight
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8528,7 +8528,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Business Insight
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Business Insight
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8547,7 +8547,7 @@ End Function
 
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8567,7 +8567,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8588,7 +8588,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Business Insight
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Business Insight
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8613,7 +8613,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Business Insight
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Business Insight
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8662,7 +8662,7 @@ End Sub
 
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '	terrFrom	: Error type to copy values from
 '	terrTo	: Error type to copy values to
@@ -8689,7 +8689,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '	tError	: Error to reset
 '**********************************************************************************************''
@@ -8714,7 +8714,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '	tError	: Error to get string representation of
 '**********************************************************************************************''
@@ -8745,7 +8745,7 @@ End Function
 '#                                                                                                                     #
 '#######################################################################################################################
 '*******************************************************************************
-'** 	Created By Peter Horsbøll Møller, Pitney Bowes Software
+'** 	Created By Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 '** 	Program:
 '** 	Modul:
 '**
@@ -8753,7 +8753,7 @@ End Function
 
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8776,7 +8776,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8816,7 +8816,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8845,7 +8845,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8875,7 +8875,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8899,7 +8899,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8924,7 +8924,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8954,7 +8954,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -8989,7 +8989,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -9026,7 +9026,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -9073,7 +9073,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -9096,7 +9096,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -9131,7 +9131,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -9166,7 +9166,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -9186,7 +9186,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -9216,7 +9216,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -9251,7 +9251,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -9287,7 +9287,7 @@ End Function
 
 '**********************************************************************************************''
 
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -9321,7 +9321,7 @@ End Sub
 '********************************************************************************************************************************************************************************************
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -9344,7 +9344,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -9372,7 +9372,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -9402,7 +9402,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -9426,7 +9426,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -9456,7 +9456,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '	:
 'Return value:
@@ -9491,7 +9491,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes Software
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes Software
 'Parameters:
 '
 '**********************************************************************************************''
@@ -9596,7 +9596,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '	sFile		: Name of file to exists to enable debug state
 '**********************************************************************************************''
@@ -9620,7 +9620,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '	bValue		: Value (true/false) to set the debug state to
 '**********************************************************************************************''
@@ -9639,7 +9639,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '	:
 'Return value:
@@ -9776,7 +9776,7 @@ ErrorOccured:
 End Function
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '	sMessage	: Message to print to the message window - and write to debug file.
 '			  Note that a time stamp is inserted in front of the message
@@ -9798,7 +9798,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '	sMessage	: Message to write to debug file.
 '			  Note that a time stamp is inserted in front of the message
@@ -9834,7 +9834,7 @@ ErrorOccured:
 End Sub
 
 '**********************************************************************************************''
-'Created by Peter Horsbøll Møller, Pitney Bowes MapInfo
+'Created by Peter HorsbÃ¸ll MÃ¸ller, Pitney Bowes MapInfo
 'Parameters:
 '	sMessage	: Message to show in messagebox - and write to debug file.
 '**********************************************************************************************''
@@ -10149,8 +10149,7 @@ ErrorOccurred:
 	End Program	
 End Sub
 
-Function Replace(ByVal _full_string As String, ByVal _remove_string As
-String, ByVal _replacement_string As String) As String
+Function Replace(ByVal _full_string As String, ByVal _remove_string As String, ByVal _replacement_string As String) As String
         Dim _remove_string_pos As Integer
         Dim _start_string As String
         Dim _end_string As String
