@@ -13,11 +13,9 @@ Sub Main()
 	mbxPath = ApplicationDirectory$()
 	mbxPath = PathToDirectory$(mbxPath)
 	
-	Call RIBBON_AddTab("My Tab","M")
-	Call RIBBON_AddGroup("My Tab", "My Group")
-	Call RIBBON_AddButton("My Tab","My Group", "My Button 1", "Y", mbxPath & "Buttons\Yellow.png", "This is my first button", "BUTTON_Example1")
-	Call RIBBON_AddButton("My Tab","My Group", "My Button 2", "R", mbxPath & "Buttons\Red.png", "This is my second button", "BUTTON_Example2")
-	Call RIBBON_AddButton("My Tab","My Group", "Close Tool", "X", mbxPath & "Buttons\Exit.png", "Click here to exit the tool", "EndHandler")
+	Call RIBBON_AddSimpleButton("My Tab","My Group", "My Button 1", "Y", mbxPath & "Buttons\Yellow.png", "This is my first button", "BUTTON_Example1")
+	Call RIBBON_AddSimpleButton("My Tab","My Group", "My Button 2", "R", mbxPath & "Buttons\Red.png", "This is my second button", "BUTTON_Example2")
+	Call RIBBON_AddSimpleButton("My Tab","My Group", "Close Tool", "X", mbxPath & "Buttons\Exit.png", "Click here to exit the tool", "EndHandler")
 End Sub
 
 Sub BUTTON_Example1()
