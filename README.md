@@ -53,6 +53,7 @@ End Sub
 ### Arguments
 
 *(string)* **sTabName** : This is the name of the tab which you want to create. If the tab already exists, the function will do nothing. 
+
 *(string)* **sKeyTip**  : The [keytip](http://www.accessribbon.de/images/EN_AccDB1_False.JPG) which will be assigned to this control (key tips appear when you tap the alt key in MapInfo). 
 
 ### Usage:
@@ -88,11 +89,17 @@ Call RIBBON_AddGroup("My Tab", "My Group")
 ### Arguments
 
 *(string)* **sTabName**     : This is the name of the tab which will contain the given group. 
+
 *(string)* **sGroupName**   : This is the name of the group which will contain the given button. 
+
 *(string)* **sButtonName**  : This will be the name displayed on your button. 
+
 *(string)* **sKeyTip**      : This is the keytip of your button. 
+
 *(string)* **sIconPath**    : This is the path to a picture which contains the image you want to display on your button. 
+
 *(string)* **sDescription** : This is the description of the buttons action. It will be displayed whenever you hover the mouse over the ribbon button. 
+
 *(string)* **sSubName**     : This is the name of the sub routine which will be called when your button is clicked. 
 
 ### Usage:
@@ -122,11 +129,17 @@ End Sub
 ### Arguments
 
 *(string)* **sTabName**     : This is the name of the tab which will contain the given group. If the tab doesn't exist, it will be created. 
+
 *(string)* **sGroupName**   : This is the name of the group which will contain the given button. If the group doesn't exist, it will be created. 
+
 *(string)* **sButtonName**  : This will be the name displayed on your button. 
+
 *(string)* **sKeyTip**      : This is the keytip of your button. 
+
 *(string)* **sIconPath**    : This is the path to a picture which contains the image you want to display on your button. 
+
 *(string)* **sDescription** : This is the description of the buttons action. It will be displayed whenever you hover the mouse over the ribbon button. 
+
 *(string)* **sSubName**     : This is the name of the sub routine which will be called when your button is clicked. 
 
 ### Usage:
@@ -173,12 +186,19 @@ End Sub
 ### Arguments
 
 *(string)* **sTabName**            : This is the name of the tab which will contain the given group.
+
 *(string)* **sGroupName**          : This is the name of the group which will contain the given button.
+
 *(string)* **sSplitButtonName**    : This is the name of the split button which will contain the given button.
+
 *(string)* **sKeyTip**             : This is the keytip of your button, displayed when the split button is open.
+
 *(string)* **sDefaultButtonName**  : This is the name of the default control.
+
 *(string)* **sDefaultIconPath**    : This is the icon of the default control.
+
 *(string)* **sDefaultDescription** : This is the description of the default control.
+
 *(string)* **sDefaultSubName**     : This is the handler of the default control.
 
 ### Usage:
@@ -194,8 +214,11 @@ To be confirmed...
 ### Arguments
 
 *(string)* **sTabName**        : This is the name of the tab which will contain the given group.
+
 *(string)* **sGroupName**      : This is the name of the group which will contain the given button.
+
 *(string)* **sSplitButtonName**: This is the name of the split button which will contain the given button.
+
 *(string)* **sSplitGroupName** : This is the name of the split button group to be created.
 
 ### Usage:
@@ -211,13 +234,21 @@ To be confirmed...
 ### Arguments
 
 *(string)* **sTabName**        : This is the name of the tab which will contain the given group.
+
 *(string)* **sGroupName**      : This is the name of the group which will contain the given button.
+
 *(string)* **sSplitButtonName**: This is the name of the split button which will contain the given button.
+
 *(string)* **sSplitGroupName** : This is the name of the split button group  which will contain the given button.
+
 *(string)* **sButtonName**     : This name of your button.
+
 *(string)* **sKeyTip**         : This is the keytip of your button, displayed when the split button is open.
+
 *(string)* **sIconPath**       : An image file path, to be the icon of your button.
+
 *(string)* **sDescription**    : This is the description of the buttons action. It will be displayed whenever you hover the mouse over the ribbon button.
+
 *(string)* **sSubName**        : This is the name of the sub routine which will be called when your button is clicked.
 
 ### Usage:
