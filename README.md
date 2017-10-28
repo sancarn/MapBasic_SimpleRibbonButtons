@@ -171,16 +171,13 @@ End Sub
 > **A brief note about split buttons**
 >
 > The hierarchy of a split button is as follows:
+> ```
 >  SplitButton
->
 >      SplitGroup
->
 >          SplitControl
->
 >          SplitControl
->
 >          SplitControl
->
+>```
 > The Split button contains the current state of the button. The split group contains all the possible states of the button. And each split control, is 1 state of the split button.
 
 ------------------------------------------------------------------------------------------------------------------------
