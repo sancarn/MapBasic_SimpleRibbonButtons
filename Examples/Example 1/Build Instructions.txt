@@ -1,0 +1,13 @@
+Step 1. Make sure that FULL_RIBBON.MBO and FULL_RIBBON.DEF are in the main directory.
+Step 2. Compile `Example1 - Simple.mb` (Ctrl+K)
+Step 3. Open project file `Example1 - Simple.mbp` (Ctrl+J)
+Step 4. Make sure to include the line `Module = FULL_RIBBON.MBO`. It should look like this: (Ctrl+L)
+
+	[Link]
+	Application = Example1 - Simple.mbx
+	Module = Example1 - Simple.MBO
+	Module = FULL_RIBBON.MBO
+
+Step 5. Link the project
+
+If all went well, you should now have an MBX :)

@@ -1,0 +1,4 @@
+[Link]
+Application = Example 2 - SplitButton.mbx
+Module = Example 2 - SplitButton.MBO
+Module = FULL_RIBBON.MBO

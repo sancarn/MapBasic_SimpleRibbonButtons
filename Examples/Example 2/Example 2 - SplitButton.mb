@@ -1,0 +1,36 @@
+Include "FULL_RIBBON.DEF"
+Include "Enums.def"
+Declare Sub Main				'Required for compilation of projects
+Declare Sub EndHandler			'Required for button activity
+Global mbxPath as String
+
+
+
+Declare Sub firstHandler
+Declare Sub secondHandler
+
+Sub Main()
+	mbxPath = ApplicationDirectory$()
+	mbxPath = PathToDirectory$(mbxPath)
+	
+	Call RIBBON_AddTab("My Tab","M")
+	Call RIBBON_AddGroup("My Tab", "My Group")
+	Call RIBBON_AddSplitGroup("My Tab", "My Group", "Button 1", "My Split", "S", mbxPath & "Buttons\1.png", "Some awesome description", "firstHandler")
+	Call RIBBON_AddSplitButton("My Tab", "My Group", "My Split", "Button 1", "B", mbxPath & "Buttons\1.png", "firstHandler")
+	Call RIBBON_AddSplitButton("My Tab", "My Group", "My Split", "Button 2", "B", mbxPath & "Buttons\2.png", "secondHandler")
+End Sub
+
+Sub firstHandler()
+	Note 1
+End Sub
+
+Sub secondHandler()
+	Note 2
+End Sub
+
+
+
+'Required for easy EndHandling
+Sub EndHandler
+	 Call RBNEndHandler
+End Sub

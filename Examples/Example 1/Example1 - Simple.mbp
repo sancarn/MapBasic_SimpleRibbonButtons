@@ -1,0 +1,4 @@
+[Link]
+Application = Example1 - Simple.mbx
+Module = Example1 - Simple.MBO
+Module = FULL_RIBBON.MBO

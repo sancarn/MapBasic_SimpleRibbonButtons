@@ -10158,26 +10158,17 @@ String, ByVal _replacement_string As String) As String
         OnError Goto ErrorOccured
         
 Search_For_Replace:
-        _remove_string_pos = InStr(1, LCase$(_full_string),
-LCase$(_remove_string))
+        _remove_string_pos = InStr(1, LCase$(_full_string),LCase$(_remove_string))
         
         If (_remove_string_pos > 0) Then
                 If (_remove_string_pos = 1) Then
-                        _full_string = _replacement_string +
-Mid$(_full_string, Len(_remove_string)+1, Len(_full_string) -
-Len(_remove_string))
-                ElseIf ((_remove_string_pos + Len(_remove_string) - 1) =
-Len(_full_string)) Then
-                        _full_string = Left$(_full_string,
-_remove_string_pos-1) + _replacement_string
+                        _full_string = _replacement_string + Mid$(_full_string, Len(_remove_string)+1, Len(_full_string) - Len(_remove_string))
+                ElseIf ((_remove_string_pos + Len(_remove_string) - 1) = Len(_full_string)) Then
+                        _full_string = Left$(_full_string,_remove_string_pos-1) + _replacement_string
                 Else
-                        _start_string = Left$(_full_string,
-_remove_string_pos-1)
-                        _end_string = Mid$(_full_string,
-_remove_string_pos + Len(_remove_string), Len(_full_string) -
-(_remove_string_pos + Len(_remove_string) - 1))
-                        _full_string = _start_string +
-_replacement_string + _end_string
+                        _start_string = Left$(_full_string,_remove_string_pos-1)
+                        _end_string = Mid$(_full_string,_remove_string_pos + Len(_remove_string), Len(_full_string) - (_remove_string_pos + Len(_remove_string) - 1))
+                        _full_string = _start_string + _replacement_string + _end_string
                 End If
                 
                 Goto Search_For_Replace
