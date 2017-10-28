@@ -15,9 +15,16 @@ Sub Main()
 	
 	Call RIBBON_AddTab("My Tab","M")
 	Call RIBBON_AddGroup("My Tab", "My Group")
-	Call RIBBON_AddSplitGroup("My Tab", "My Group", "Button 1", "My Split", "S", mbxPath & "Buttons\1.png", "Some awesome description", "firstHandler")
 	Call RIBBON_AddSplitButton("My Tab", "My Group", "My Split", "Button 1", "B", mbxPath & "Buttons\1.png", "firstHandler")
-	Call RIBBON_AddSplitButton("My Tab", "My Group", "My Split", "Button 2", "B", mbxPath & "Buttons\2.png", "secondHandler")
+	Call RIBBON_AddSplitGroup("My Tab", "My Group", "My Split", "My SplitGroup")
+	Call RIBBON_AddSplitControl("My Tab", "My Group", "My Split", "My SplitGroup", "Button 1", "1", mbxPath & "Buttons\1.png", "firstHandler")
+	Call RIBBON_AddSplitControl("My Tab", "My Group", "My Split", "My SplitGroup", "Button 2", "2", mbxPath & "Buttons\2.png", "secondHandler")
+	
+	'In the future I want this to change to:
+	'Call RIBBON_AddSimpleSplitButton("My Tab", "My Group", "My Split", "My SplitGroup", "Button 1", "1", mbxPath & "Buttons\1.png", "firstHandler")
+	'Call RIBBON_AddSimpleSplitButton("My Tab", "My Group", "My Split", "My SplitGroup", "Button 2", "2", mbxPath & "Buttons\2.png", "secondHandler")
+	'
+	'The Split button should always choose the first option in the list.
 End Sub
 
 Sub firstHandler()
