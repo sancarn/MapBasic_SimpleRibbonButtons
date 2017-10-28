@@ -44,6 +44,7 @@ Sub EndHandler
 End Sub
 ```
 
+------------------------------------------------------------------------------------------------------------------------
 
 ## `RIBBON_AddTab(sTabName, sKeyTip)`
 
@@ -60,6 +61,8 @@ End Sub
 Call RIBBON_AddTab("My Tab","M")
 ```
 
+------------------------------------------------------------------------------------------------------------------------
+
 ## `RIBBON_AddGroup(sTabName, sGroupName)`
 
 `RIBBON_AddGroup`, adds a group to an existing tab.
@@ -75,6 +78,8 @@ Call RIBBON_AddTab("My Tab","M")
 Call RIBBON_AddTab("My Tab","M")
 Call RIBBON_AddGroup("My Tab", "My Group")
 ```
+
+------------------------------------------------------------------------------------------------------------------------
 
 ## `RIBBON_AddButton(sTabName, sGroupName, sButtonName,	 sKeyTip, sIconPath, sDescription, sSubName)`
 
@@ -107,6 +112,8 @@ Sub BUTTON()
 	Note "Button"
 End Sub
 ```
+
+------------------------------------------------------------------------------------------------------------------------
 
 ## `RIBBON_AddSimpleButton(sTabName, sGroupName, sButtonName,	 sKeyTip, sIconPath, sDescription, sSubName)`
 
@@ -146,6 +153,8 @@ Sub BUTTON3()
 End Sub
 ```
 
+------------------------------------------------------------------------------------------------------------------------
+
 > A brief note about split buttons
 > The hierarchy of a split button is as follows:
 >  SplitButton
@@ -154,6 +163,8 @@ End Sub
 >          SplitControl
 >          SplitControl
 > The split control is the actual button, 
+
+------------------------------------------------------------------------------------------------------------------------
 
 ## `RIBBON_AddSplitButton(sTabName, sGroupName, sSplitButtonName, sKeyTip, sDefaultButtonName, sDefaultIconPath, sDefaultDescription, sDefaultSubName)`
 
@@ -174,6 +185,8 @@ End Sub
 
 To be confirmed...
 
+------------------------------------------------------------------------------------------------------------------------
+
 ## `RIBBON_AddSplitGroup(sTabName, sGroupName, sSplitButtonName, sSplitGroupName)`
 
 `RIBBON_AddSplitGroup` is a WIP function for creating split buttons. Currently it isn't declared correctly.
@@ -188,6 +201,8 @@ To be confirmed...
 ### Usage:
 
 To be confirmed...
+
+------------------------------------------------------------------------------------------------------------------------
 
 ## `RIBBON_AddSplitControl(sTabName, sGroupName, sSplitButtonName, sSplitGroupName, sButtonName, sKeyTip, sIconPath, sDescription, sSubName)`
 
