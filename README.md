@@ -24,13 +24,13 @@ Global mbxPath as String
 
 
 Sub Main()
-	mbxPath = ApplicationDirectory$()
-	mbxPath = PathToDirectory$(mbxPath)
-	
-  'MAKE RIBBON BUTTONS
-  '*******************
-  
-  
+    mbxPath = ApplicationDirectory$()
+    mbxPath = PathToDirectory$(mbxPath)
+    
+    'MAKE RIBBON BUTTONS
+    '*******************
+    
+      
 End Sub
 
 'BUTTON HANDLERS
@@ -40,7 +40,7 @@ End Sub
 
 'Required for easy EndHandling
 Sub EndHandler
-	 Call RBNEndHandler
+    Call RBNEndHandler
 End Sub
 ```
 
